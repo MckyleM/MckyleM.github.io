@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="KeypadCalc.css">
+    <title>Keypad Calculator</title>
+</head>
+<body>
+    <div>
+        <h1>Keypad Calculator</h1>
+        <input type="text" name="display" id="display" placeholder="0" readonly>
+        <br>
+        <table>
+        <tr>
+            <td><input type="button" value="C" onclick="clr()" class="Symbol"></td>
+            <td><input type="button" value="%" onclick="perc()" class="Symbol"></td>
+            <td><input type="button" value="⌫" onclick="bck()" class="Symbol"></td>
+            <td><input type="button" value="÷" onclick="div()" class="Symbol"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="dis(7)" class="Num"></td>
+            <td><input type="button" value="8" onclick="dis(8)" class="Num"></td>
+            <td><input type="button" value="9" onclick="dis(9)" class="Num"></td>  
+            <td><input type="button" value="x" onclick="mul()" class="Symbol"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="dis(4)" class="Num"></td>
+            <td><input type="button" value="5" onclick="dis(5)" class="Num"></td>
+            <td><input type="button" value="6" onclick="dis(6)" class="Num"></td>
+            <td><input type="button" value="-" onclick="sub()" class="Symbol"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="dis(1)" class="Num"></td>
+            <td><input type="button" value="2" onclick="dis(2)" class="Num"></td>
+            <td><input type="button" value="3" onclick="dis(3)" class="Num"></td>
+            <td><input type="button" value="+" onclick="add()" class="Symbol"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="+/-" onclick="neg()" class="Symbol"></td>
+            <td><input type="button" value="0" onclick="dis(0)" class="Num"></td>
+            <td><input type="button" value="." onclick="dis('.')" class="Symbol"></td>
+            <td><input type="button" value="=" onclick="solve()" class="Symbol"></td>
+        </tr>
+        </table>
+    </div>
+    <script src="KeypadCalc.js"></script>
+</body>
+</html>

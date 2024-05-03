@@ -1,0 +1,25 @@
+.Symbol{
+    background-color: greenyellow;
+    width: 10vw;
+    height: 10vh;
+    margin-left: 10px;
+}
+.Num{
+    background-color: aqua;
+    width: 10vw;
+    height: 10vh;
+    margin-left: 10px;
+}
+.backspace{
+    background-color: red;
+    width: 10vw;
+    height: 10vh;
+    margin-left: 10px;
+}
+input{
+    width: 40%;
+    height: 5vh;
+    background-color: aquamarine;
+    font-size: 30px;
+    margin-left: 10px;
+}

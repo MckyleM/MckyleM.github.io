@@ -1,73 +1,32 @@
+:root {
+    --S_Letter: #B4E674;
+}
 body {
-    background: linear-gradient(to bottom, lightpurple, white);
+    background: linear-gradient(to bottom, #212121, #292929);
 }
+
 .floating-nav-inner{
-    width: 75vw;
-    padding-top: 38px;
-    padding-bottom: 37px;
-    margin-left: 100px;
-    background : linear-gradient(to right, violet, pink);
-}
-#Logo{
-    background-color: rgb(192, 132, 216);
-    border-radius: 145%;
-    height: 120px;
-    width: 120px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-#Bubble1{
-    float: left;
-    background-color: rgb(231, 207, 241);
-    border-radius: 145%;
-    height: 140px;
-    width: 140px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#Bubble2{
-    float: right;
-    margin-right: 10px;
-    background-color: rgb(231, 207, 241);
-    border-radius: 145%;
-    height: 140px;
-    width: 140px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-#NavBar{
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-#NavBar ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    
-
+    float: right;   
+    height: 6vh;
+    padding-right:  3vw;
+    width: 100vw;
 }
 li{
     list-style: none;
     display: inline-block;
     padding-left: 50px;
+    float: right;
+}
+#ab{
+    color: rgb(2, 86, 165);
+    font-size: 1.5vh;
 }
 li a{
-    color: white;
-    font-size: 30px;
+    text-decoration: none;
+    color: #B4E674;
+    font-size:  1.5vh;
     font-weight: bold;
-    margin-right: 60px;    
+    margin-right: 2%;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -85,3 +44,29 @@ li a{
     background: purple;
     border-radius: 10px;
   }
+
+#intro-block p{
+    color: white;
+    font-size: 2vh;
+    font-weight: lighter;
+}
+#intro-block h1{
+    color: white;
+    font-size: 5vh;
+    font-weight: lighter;
+}
+.Title_block{
+    margin-top: 5vh;
+    margin-left: 30vw;
+    width: 40vw;
+    text-align: center;
+}
+#Name_Tag{
+    color: var(--S_Letter);
+}
+#Intro-pic-block img {
+    width: 110%;  /* Change this to your desired width */
+    margin-left: -2vw;
+    height: 30vw;  /* This will maintain the aspect ratio of the image */
+    border-radius: 30%;
+}
