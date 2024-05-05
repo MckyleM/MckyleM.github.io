@@ -2,12 +2,9 @@
 <html>
 <head>
     <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width initial-scale=1" >
     
-    
-    <title>Your Personal Website</title>
-
-    <style>
-    </style>
+    <title>Mckyle Meyer</title>
 </head>
 <body>
     
@@ -38,8 +35,7 @@
             <h2 class="Title_block">{"<span class="title_style">About_me</span>"}</h2>
             <div id="Abt_box">
                 <hr>
-                <p id="Abt_left" class="Abt_text">...A dedicated developer, software enthusiast and always ready to learn;</p>
-             
+                <p id="Abt_left" class="Abt_text">...A dedicated developer, software enthusiast and always ready to learn;</p>         
                 <p id="Abt_right" class="Abt_text">…I have been coding since 2018, learning new things ever since. I am a very curious person and strive to make sure that I understand everything I come across. With a deep interest for AI I am ready to make a serious impact for the future of our wold and lives;</p>
             </div>  
             <br> 
@@ -49,24 +45,68 @@
             <h2 class="Title_block">{"<span class="title_style">Projects</span>"}</h2>
             <hr>
             <div class="project-bubble" id="Pro1">
-                <h3>Project 1</h3>
-                <p>Write a short description of your project here</p>
+                <h3>Youtube downloader</h3>
+                <p>A python script used for downloading youtube videos to your computer</p>
+                <img src="/Youtube_Downloader\YD_snip.png" alt="YT_downloader">
+                <img src="/Youtube_Downloader\YD_result.png" alt="YT_result">
             </div>
             <div class="project-bubble" id="Pro2">
-                <h3>Project 2</h3>
-                <p>Write a short description of your project here</p>
+                <h3>Calculator</h3>
+                <p>A calculator key-pad written in javascript</p>
+                <div>
+                    <input type="text" name="display" id="display" placeholder="0" readonly>
+                    <br>
+                    
+                    <table>
+                    <tr>
+                        <td><input type="button" value="C" onclick="clr()" class="Symbol"></td>
+                        <td><input type="button" value="%" onclick="perc()" class="Symbol"></td>
+                        <td><input type="button" value="⌫" onclick="bck()" class="Symbol"></td>
+                        <td><input type="button" value="÷" onclick="div()" class="Symbol"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" onclick="dis(7)" class="Num"></td>
+                        <td><input type="button" value="8" onclick="dis(8)" class="Num"></td>
+                        <td><input type="button" value="9" onclick="dis(9)" class="Num"></td>  
+                        <td><input type="button" value="x" onclick="mul()" class="Symbol"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="dis(4)" class="Num"></td>
+                        <td><input type="button" value="5" onclick="dis(5)" class="Num"></td>
+                        <td><input type="button" value="6" onclick="dis(6)" class="Num"></td>
+                        <td><input type="button" value="-" onclick="sub()" class="Symbol"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="dis(1)" class="Num"></td>
+                        <td><input type="button" value="2" onclick="dis(2)" class="Num"></td>
+                        <td><input type="button" value="3" onclick="dis(3)" class="Num"></td>
+                        <td><input type="button" value="+" onclick="add()" class="Symbol"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="+/-" onclick="neg()" class="Symbol"></td>
+                        <td><input type="button" value="0" onclick="dis(0)" class="Num"></td>
+                        <td><input type="button" value="." onclick="dis('.')" class="Symbol"></td>
+                        <td><input type="button" value="=" onclick="solve()" class="Symbol"></td>
+                    </tr>
+                    </table>
+                </div>
+                
             </div>
             <div class="project-bubble" id="Pro3">
                 <h3>Project 3</h3>
                 <p>Write a short description of your project here</p>
             </div>
             <div class="project-bubble" id="Pro4">
-                <h3>Project 4</h3>
-                <p>Write a short description of your project here</p>
+                <h3>Image editor</h3>
+                <p>A python script to edit images</p>
+                <img id="Org_img" src="Aug-8@21.4.8.png" alt="Original" width="500" height="600">
+                <img id="Org_img" src="Aug-8@21.4.8_edited.jpg" alt="Edited" width="500" height="600">
             </div>
             <div class="project-bubble" id="Pro5">
-                <h3>Project 5</h3>
-                <p>Write a short description of your project here</p>
+                <h3>Smallpenny</h3>
+                <p>A small blockchain that I built</p>
+                <img src="/Blockchain/SmallPen_img.png" alt="Smallpenny">
+                <img id="SP_snip" src="/Blockchain/SmallPen_Snip.png" alt="Smallpenny">
             </div>
         </section>
         
@@ -74,14 +114,8 @@
             <hr>
             <h2 class="Title_block">{"<span class="title_style">Resume</span>"}</h2>
             <div class="res_container">
-                <p id="Res_left" class="Res_text">Download my resume <a href="Resume.pdf" download>here</a></p>
                 <div  id="Res_right" class="Res_text">
-                <p>Experience:</p>
-                <ul>
-                    <li>Bartender: 1 Year</li>
-                    <li>Baraca Accountants: 6 Months</li>
-                    
-                </ul>
+                    <embed src="Resume-Mckyle-Meyer.pdf" type="application/pdf" width="100%" height="600px" />
             </div>
             </div>
         
@@ -95,5 +129,6 @@
     <footer>
         <p>&copy; 2021 Your Name</p>
     </footer>
+    <script src="KeypadCalc.js"></script>
 </body>
 </html>

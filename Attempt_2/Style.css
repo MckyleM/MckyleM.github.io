@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'xerodaregular';
+    src: url('Font/xerodaregular-p7dwr-webfont.woff2') format('woff2'),
+         url('Font/xerodaregular-p7dwr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'xerodaregular', sans-serif;
+}
 :root {
     --S_Letter: #B4E674;
     --B_Letter: rgb(124, 184, 233);
@@ -104,23 +119,23 @@ li a{
 }
 .project-bubble {
     width: 22vw;
-    height: 50vw;
+    height: 45dvh;
     background: #1616168c;
     border-radius: 10%;
-    padding: 20px;
     margin: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .project-bubble h3 {
-    margin-top: 30%;
+    margin-top: 3vh;
 }
 #Pro2,#Pro4{
     float: right;
 
 }
 #Pro1,#Pro5{
+    padding-bottom: 10px;
     float: left;
 
 }
@@ -131,6 +146,9 @@ li a{
 #Pro3{
     margin-left: 35vw;
     margin-top: 30vw;
+}
+#Pro3 h3{
+    padding-top: 30px;
 }
 #resume{
     margin-top: 50vw;
@@ -158,9 +176,91 @@ li a{
 #Res_right{
     
     color: var(--B_Letter);
-    float: right;
+    margin-left: 3rem;
     width: 30vw;
 }
-#Res_right ul li{
-    float:left;
+
+h3{
+    color:var(--S_Letter)
+}
+.project-bubble p{
+    color: var(--B_Letter);
+}
+.Symbol{
+    background-color: greenyellow;
+    width: 3vw;
+    height: 3vh;
+    font-size: 1vhqa    ;
+    
+}
+.Num{
+    background-color: aqua;
+    width: 3vw;
+    height: 3vh;
+    margin-left:.5vw;
+    font-size: 1vh;
+}
+.backspace{
+    background-color: red;
+    width: 3vw;
+    height: 3vh;
+    font-size: 1vh;
+    margin-left: 10px;
+}
+input{
+    width: 5v;
+    height: 5vh;
+    background-color: aquamarine;
+    font-size: 2vh;
+    margin-left: .5vw;
+}
+#display{
+    width: 20vw;
+    height: 2vh;
+    background-color: aquamarine;
+    font-size: 2vh;
+    margin-left: .5vw;
+    text-align: right;
+    
+}
+
+@media screen and (max-height: 900px), screen and (max-width: 800px) {
+    table{
+        background-color: red;
+
+        opacity: 0;
+    } 
+    #display{
+        opacity:0;
+    }
+}
+table{
+   
+    height: 2%;
+    margin-left: 3vh;
+    margin-top: 1vh;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+
+#Calc_image{
+    opacity: 0;
+    width: 20vw;
+    height: 8rem;
+    margin-top: 0vw;    
+}
+
+img{
+    width: 20vw;
+    height:15rem;
+    margin-top: 0vw;    
+}
+@media screen and (max-height: 900px), screen and (max-width: 1900px) {
+
+    img{
+        height: 8vw;
+      
+    }
+    
 }
