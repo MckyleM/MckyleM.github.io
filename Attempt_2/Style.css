@@ -170,6 +170,10 @@ li a{
 #resume{
     margin-top: 50vw;
 }
+#resume hr{
+    margin-top: 50vh;
+
+}
 .res_container{
 
     margin-left: 32vw;
@@ -240,6 +244,19 @@ input{
     text-align: right;
     
 }
+#ETLink{
+    color: var(--B_Letter);
+    padding-top: 2vh;
+    text-align: center;
+    height: 6vh;
+    border-radius: 100%;
+    background-color: var(--S_Letter);
+    font-size: 2vh;
+    font-weight: bold;
+    margin-right: 2%;
+    pointer-events: all;
+
+}
 
 
 table{
@@ -275,12 +292,17 @@ img{
     .Title_block{
         margin-top: 20vh;
     }
+
     .project-container{
         margin-top: -20vh;
     }
     img{
         width: 20vw;
         height: 8vh;
+    }
+    *{
+        max-width: 100%;
+      
     }
     #key-pad{
         float:left;
