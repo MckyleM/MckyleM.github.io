@@ -6,12 +6,17 @@
     font-style: normal;
 
 }
+*{
+    max-width: 100%;
+  
+}
 html{
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'xerodaregular', sans-serif;
+    overflow-x:hidden;
 }
 :root {
     --S_Letter: #B4E674;
@@ -49,7 +54,7 @@ li a{
 }
 /* width */
 ::-webkit-scrollbar {
-    background-color: #212121;
+    background-color: #292929;
     width: 20px;
   }
   
@@ -67,7 +72,7 @@ li a{
   }
 
 #intro-block h1{
-    color: white;
+    color: var(--B_Letter);
     font-size: 5vh;
     font-weight: lighter;
 }
@@ -76,7 +81,7 @@ li a{
     margin-left: 30vw;
     width: 40vw;
     text-align: center;
-    color: white;
+    color: var(--B_Letter);
     font-size: 2.5vh;
     font-weight: lighter;
 }
@@ -117,11 +122,22 @@ li a{
     float: right;
     width: 30vw;
 }
+.project-container {
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    gap: 2vmin;
+    position:absolute; left: 50%; 
+    pointer-events: none;
+    height: 100vh;
+    padding-top: 20vh; 
+
+}
 .project-bubble {
     width: 22vw;
-    height: 45dvh;
+    height: 60vh;
     background: #1616168c;
-    border-radius: 10%;
+    border-radius: 20%;
     margin: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -129,27 +145,28 @@ li a{
 
 .project-bubble h3 {
     margin-top: 3vh;
-}
+}/*
 #Pro2,#Pro4{
-    float: right;
+
 
 }
 #Pro1,#Pro5{
+    float:right;
     padding-bottom: 10px;
-    float: left;
+
 
 }
-#Pro5,#Pro4{
-    margin-top: -10vw;
+#Pro5{
+    margin-top: -48vh;
 
 }
 #Pro3{
     margin-left: 35vw;
-    margin-top: 30vw;
+    
 }
 #Pro3 h3{
     padding-top: 30px;
-}
+}*/
 #resume{
     margin-top: 50vw;
 }
@@ -215,7 +232,7 @@ input{
     margin-left: .5vw;
 }
 #display{
-    width: 20vw;
+    width: 7vw;
     height: 2vh;
     background-color: aquamarine;
     font-size: 2vh;
@@ -224,43 +241,94 @@ input{
     
 }
 
-@media screen and (max-height: 900px), screen and (max-width: 800px) {
-    table{
-        background-color: red;
 
-        opacity: 0;
-    } 
-    #display{
-        opacity:0;
-    }
-}
 table{
-   
+    width: 4vw;
     height: 2%;
-    margin-left: 3vh;
     margin-top: 1vh;
     border: 1px solid white;
     border-collapse: collapse;
 }
-
-
-#Calc_image{
-    opacity: 0;
-    width: 20vw;
-    height: 8rem;
-    margin-top: 0vw;    
+#Calculator{
+    pointer-events: all;
 }
+
+
+
 
 img{
+    
     width: 20vw;
-    height:15rem;
+    height:20vh;
     margin-top: 0vw;    
 }
-@media screen and (max-height: 900px), screen and (max-width: 1900px) {
+@media screen and (max-height: 900px), screen and (max-width: 800px) {
+    table{
 
+        opacity: 1;
+    } 
+    #display{
+        opacity:1;
+    }
+}
+@media screen and (max-height: 900px), screen and (max-width: 1900px) {
+    .Title_block{
+        margin-top: 20vh;
+    }
+    .project-container{
+        margin-top: -20vh;
+    }
     img{
-        height: 8vw;
-      
+        width: 20vw;
+        height: 8vh;
+    }
+    #key-pad{
+        float:left;
+        margin-left: 1.1vw;
+    }
+    .project-bubble {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        width: 22vw;
+        height: 35vh;
+        background: #1616168c;
+        border-radius: 20%;
+        margin: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .project-bubble p{
+        font-size: 1vh;
+        color: var(--B_Letter);
     }
     
+}
+#contact {
+    margin-left: 10%;
+    margin-top: 10vh;
+    width: 80%;
+    height: 20vh;
+    padding: 20px;
+    border-radius: 50% 50% 0 0;
+    background-color: var(--S_Letter);
+    box-shadow: 0px 0px 10px 0px var(--B_Letter);
+}
+
+#contact p {
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-left: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    padding-right: 50vw;
+    position: fixed;
+    bottom: 0;
+    width: 110%;
 }

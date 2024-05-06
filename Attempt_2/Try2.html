@@ -12,10 +12,10 @@
         <div class="NavBar">
         <ul>
             
-            <li><a id="ab" href="#about">_about</a></li>
-            <li><a href="#projects">_projects</a></li>
+            <li><a id="ab" href="#contact">_contact</a></li>
             <li><a href="#resume">_resume</a></li>
-            <li><a href="#contact">_contact</a></li>
+            <li><a href="#projects">_projects</a></li>
+            <li><a href="#about">_about</a></li>
         </ul></div>
     </nav>
     
@@ -41,23 +41,24 @@
             <br> 
         </section>
         
-        <section id="projects">
+        <section id="projects" >
             <h2 class="Title_block">{"<span class="title_style">Projects</span>"}</h2>
-            <hr>
-            <div class="project-bubble" id="Pro1">
-                <h3>Youtube downloader</h3>
+            <hr>  
+            <div class="project-container"data-mouse-down-at="0" draggable="false"onselectstart='return false;' data-prev-percentage="0">      
+            <div class="project-bubble" id="Pro1"draggable="false">
+                <h3 >Youtube downloader</h3>
                 <p>A python script used for downloading youtube videos to your computer</p>
                 <img src="/Youtube_Downloader\YD_snip.png" alt="YT_downloader">
                 <img src="/Youtube_Downloader\YD_result.png" alt="YT_result">
             </div>
-            <div class="project-bubble" id="Pro2">
+            <div class="project-bubble" id="Pro2" style="grid-area: pro2;">
                 <h3>Calculator</h3>
                 <p>A calculator key-pad written in javascript</p>
-                <div>
+                <div id="Calculator">
                     <input type="text" name="display" id="display" placeholder="0" readonly>
                     <br>
                     
-                    <table>
+                    <table id="key-pad">
                     <tr>
                         <td><input type="button" value="C" onclick="clr()" class="Symbol"></td>
                         <td><input type="button" value="%" onclick="perc()" class="Symbol"></td>
@@ -92,24 +93,24 @@
                 </div>
                 
             </div>
-            <div class="project-bubble" id="Pro3">
+            <div class="project-bubble" id="Pro3" style="grid-area: pro3;">
                 <h3>Project 3</h3>
                 <p>Write a short description of your project here</p>
             </div>
-            <div class="project-bubble" id="Pro4">
+            <div class="project-bubble" id="Pro4" style="grid-area: pro4;">
                 <h3>Image editor</h3>
                 <p>A python script to edit images</p>
                 <img id="Org_img" src="Aug-8@21.4.8.png" alt="Original" width="500" height="600">
                 <img id="Org_img" src="Aug-8@21.4.8_edited.jpg" alt="Edited" width="500" height="600">
             </div>
-            <div class="project-bubble" id="Pro5">
+            <div class="project-bubble" id="Pro5" style="grid-area: pro5;">
                 <h3>Smallpenny</h3>
                 <p>A small blockchain that I built</p>
                 <img src="/Blockchain/SmallPen_img.png" alt="Smallpenny">
                 <img id="SP_snip" src="/Blockchain/SmallPen_Snip.png" alt="Smallpenny">
             </div>
         </section>
-        
+    </div>
         <section id="resume">
             <hr>
             <h2 class="Title_block">{"<span class="title_style">Resume</span>"}</h2>
@@ -121,14 +122,22 @@
         
         </section>
         
-        <section id="contact">
+        <section>
             <h2 class="Title_block">{"<span class="title_style">Contact_me</span>"}</h2>
-            <p>Email:</p>
+                <div id="contact">
+                    <p>Phone: 0636960174</p>
+                    <p>Email: mckylemeyer12@gmial.com</p>
+                    <p>Github:<a href="https://github.com/MckyleM"> https://github.com/MckyleM</a></p>
+                    <p>Message: Hello, this is Mckyle.</p>
+                </div>
     </div>
     
     <footer>
-        <p>&copy; 2021 Your Name</p>
+        <div class="footer">
+            <p>© 2021 Mckyle Meyer</p>
+        </div>
     </footer>
+    <script src="Projects.js"></script>
     <script src="KeypadCalc.js"></script>
 </body>
 </html>
