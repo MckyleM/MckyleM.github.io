@@ -34,6 +34,8 @@ hr{
     height: 6vh;
     padding-right:  3vw;
     width: 100vw;
+    margin-top: -5vh;
+    background-color: red;
 }
 li{
     list-style: none;
