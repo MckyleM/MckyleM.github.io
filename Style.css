@@ -356,9 +356,9 @@ img{
 }
 
 .footer {
-   margin-top: 50000px;
+    height: 10px;
     margin-left: 20px;
-    background-color: #333;
+    background-color: purple;
     color: #fff;
     text-align: center;
     padding: 10px;
