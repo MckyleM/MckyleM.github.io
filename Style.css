@@ -77,8 +77,11 @@ li a{
     font-size: 5vh;
     font-weight: lighter;
 }
+#intro-block{
+    margin-top: 100px;
+
+}
 .Title_block{
-    margin-top: 0px;
     margin-left: 30vw;
     width: 40vw;
     text-align: center;
