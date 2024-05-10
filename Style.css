@@ -28,15 +28,15 @@ hr{
 }
 
 .floating-nav-inner{  
+    overflow: hidden;
     position: absolute;
     top: 0;
-    
-    padding-top: 10px;
-    height: 6vh;
-    left: 5%;
-    z-index: 1000;
-    
-    
+
+    padding-top: 20px;
+    height: 4vh;  
+    text-align: center;
+    width: 90vw;
+   
 }
 .floating-nav-inner li{
     margin-left: 200px;
@@ -47,6 +47,9 @@ hr{
 #ab{
     color: var(--B_Letter);
     font-size: 1.5vh;
+}
+#abm{
+    color: var(--B_Letter);
 }
 li a{
  
@@ -81,7 +84,7 @@ li a{
     font-weight: lighter;
 }
 #intro-block{
-    margin-top: 100px;
+    margin-top: 200px;
 
 }
 .Title_block{
@@ -482,7 +485,7 @@ img{
     margin-right: 8vw;
     top:0;
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1500px) {
     .floating-nav-inner {
         display: none;
     }
@@ -497,21 +500,23 @@ img{
         text-align: center;
     }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1500px) {
     #menu{
     display:none;
 }
 }
 
 .menu{
-    position: relative;
+    position: absolute;
     display: inline-block;
-    margin-left: 45vw;
+    right: 0%;
+    margin-right: -50px;
+
     width: 160px;
 }
 
 .menu-icon {
-    margin-left: 20vw;
+    margin-left: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -539,7 +544,7 @@ img{
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--B_Letter);
+    color: var(--S_Letter);
     text-decoration: none;
     transition: all 300ms ease-in-out;
     z-index: 1000;
