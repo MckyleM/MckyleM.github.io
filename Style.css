@@ -135,7 +135,13 @@ li a{
     width: 30vw;
 }
 #Selfie{
-    height: 40vh;
+    border-radius: 50%;
+    border: dashed 5px var(--B_Letter);
+    align-self  : center;
+    max-block-size: 40vh;
+    aspect-ratio: 2/3;
+    width: auto;
+    height: auto;
 
 
 }
