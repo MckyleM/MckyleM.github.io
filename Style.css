@@ -29,7 +29,7 @@ hr{
 
 .floating-nav-inner{  
     overflow: hidden;
-    position: absolute;
+    position: static;
     top: 0;
 
     padding-top: 20px;
@@ -225,7 +225,7 @@ li a{
     }
     .floating-nav-inner{  
         overflow: hidden;
-        position: absolute;
+        position: static;
         top: 0;
         padding-top: 20px;
         height: 8vh;  
