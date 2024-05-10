@@ -7,12 +7,43 @@
     <title>Mckyle Meyer</title>
 </head>
 <body>
-    
-    <nav class="floating-nav-inner">
+    <nav id="menu">
+        <div class="Logo">
+            <h1 style="color: #212121;">Please hire me</h1>
+        </div>
+        <div class="menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="m-links">
+                <li>
+                    <a href="#about" onclick="toggleMenu()">_about</a>
+                </li>
+                <li>
+                    <a href="#projects" onclick="toggleMenu()">_projects</a>
+                </li>
+                <li>
+                    <a href="#Skills" onclick="toggleMenu()">_skills</a>
+                </li>
+                <li>
+                    <a href="#Education" onclick="toggleMenu()">_education</a>
+                </li>
+                <li>
+                    <a href="#resume" onclick="toggleMenu()">_resume</a>
+                </li>
+                <li>
+                    <a href="#Cont_block" onclick="toggleMenu()">_contact</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+  <nav class="floating-nav-inner">
         <div class="NavBar">
         <ul>
             
-            <li><a id="ab" href="#contact">_contact</a></li>
+            <li><a id="ab" href="#Cont_block">_contact</a></li>
             <li><a href="#resume">_resume</a></li>
             <li><a href="#Education">_education</a></li>
             <li><a href="#Skills">_skills</a></li>
@@ -55,7 +86,7 @@
             <div class="project-container"data-mouse-down-at="0" draggable="false"onselectstart='return false;' data-prev-percentage="0">      
             <div class="project-bubble" id="Pro1"draggable="false">
                 <h3 >Youtube downloader</h3>
-                <p>A python script used for downloading youtube videos to your computer</p>
+                <p>A python script used for downloading youtube videos</p>
                 <img src="Youtube_Downloader\YD_snip.png" alt="YT_downloader">
                 <img src="Youtube_Downloader\YD_result.png" alt="YT_result">
             </div>
@@ -181,5 +212,6 @@
     </footer>
     <script src="Projects.js"></script>
     <script src="KeypadCalc.js"></script>
+    <script src="nav_script.js"></script>
 </body>
-</html>
+</html> 
