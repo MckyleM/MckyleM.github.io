@@ -6,10 +6,7 @@
     font-style: normal;
 
 }
-*{
-    max-width: 100%;
-  
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -27,15 +24,17 @@ body {
 }
 hr{
     border: solid #212121 2px;
+    
 }
 
-.floating-nav-inner{
-    float: right;   
+.floating-nav-inner{  
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
     height: 6vh;
-    padding-right:  3vw;
-    width: 100vw;
-    margin-top: -5vh;
-   
+    right: 5%;
+    
+    
 }
 li{
     list-style: none;
@@ -79,7 +78,7 @@ li a{
     font-weight: lighter;
 }
 .Title_block{
-    margin-top: 5vh;
+    margin-top: 0px;
     margin-left: 30vw;
     width: 40vw;
     text-align: center;
@@ -118,37 +117,139 @@ li a{
     float: left;
     width: 30vw;
 }
+.E_Name{
+    color: aquamarine;
+}
 #Abt_right{
     margin-left: 0.5vw;
     color: var(--B_Letter);
     float: right;
     width: 30vw;
 }
+#Selfie{
+    height: 40vh;
+
+
+}
 .project-container {
-    object-fit: cover;
-    object-position: center;
     display: flex;
-    gap: 2vmin;
-    position:absolute; left: 50%; 
+    justify-content: space-between;
+    width: 100%;
     pointer-events: none;
-    height: 100vh;
+    height: 60vh;
     padding-top: 20vh; 
+
 
 }
 .project-bubble {
-    
-    width: 22vw;
-    height: 60vh;
+    width: 17vw;
+    padding-bottom: 70px;
     background: #1616168c;
     border-radius: 20%;
     margin: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 0px 0px 10px 3px var(--S_Letter);
+    box-shadow: 1px 0px 10px 10px var(--S_Letter);
+}
+@media (max-width: 1800px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 200vh;
+    }
+    .project-bubble {
+        width: 80vw;
+        height: auto;
+        margin: 10px auto;
+    }
+    embed{
+        height: 50vh;
+    }
+    .Skills_Secs{
+        margin-top: -70vh;
+    }
+    #Skills{
+        
+        margin-left: 10vw;
+        width: 80vw;
+        padding-bottom: 10vw;
+    
+    }
+    #Skills ul{
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+        margin-left: -1.5vw;
+    }
+    footer {
+        margin-left: -30px; 
+       }
+       footer p{
+        margin-left: 12vw;
+       }
+       #contact {
+        margin-left: -12vw;
+        padding-right: 20vw;
+        
+        width: 80%;
+        height: 20vh;
+        padding: 20px;
+        border-radius: 50% 50% 0 0;
+        background-color: var(--S_Letter);
+        box-shadow: 0px 0px 10px 0px var(--B_Letter);
+        color: teal;
+        padding-bottom: 50px;
+        
+    }
+    
+    #contact p {
+        text-align: center;
+        justify-content: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+        
+    }
+    #contact a {
+        text-decoration: none;
+        color: var(--B_Letter);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .floating-nav-inner{  
+        position: fixed;
+        top: 0;
+        padding-top: 20px;
+        height: 8vh;  
+        width: 100%;
+       
+    }
+    .floating-nav-inner ul li{
+        list-style: none;
+        display: inline-block;
+        padding-right: 100px;
+        
+
+    }
+    #ab{
+        color: var(--B_Letter);
+        font-size: 1.5vh;
+    }
+    .floating-nav-inner ul li a{
+        text-decoration: none;
+        color: var(--S_Letter);
+        font-size:  1.5vh;
+        font-weight: bold;
+        margin-left: -110px;
+       
+    }
+    #Cont_block{
+        margin-left: -20px;
+    }
 }
 
 .project-bubble h3 {
     margin-top: 3vh;
+    
 }/*
 #Pro2,#Pro4{
 
@@ -171,18 +272,13 @@ li a{
 #Pro3 h3{
     padding-top: 30px;
 }*/
-#resume{
-    margin-top: 50vw;
-}
-#resume hr{
-    margin-top: 50vh;
 
-}
+
 .res_container{
-
+    height: 40vh;
     margin-left: 28vw;
     width: 45vw;
-    padding-bottom: 10vw;
+    padding-bottom: 20vw;
 }
 .Res_text{
     float: left;
@@ -215,7 +311,7 @@ h3{
     background-color: greenyellow;
     width: 3vw;
     height: 3vh;
-    font-size: 1vhqa    ;
+    font-size: 1vh    ;
     
 }
 .Num{
@@ -276,14 +372,14 @@ table{
 
 
 
-
 img{
     
-    width: 20vw;
+    width:15vw;
     height:20vh;
     margin-top: 0vw;    
 }
 @media screen and (max-height: 900px), screen and (max-width: 800px) {
+
     table{
 
         opacity: 1;
@@ -324,10 +420,36 @@ img{
         text-align: center;
     }
     .project-bubble p{
-        font-size: 1vh;
+        font-size: 2vh;
         color: var(--B_Letter);
     }
     
+}
+#Skills{
+    margin-top: 10vh;
+    margin-left: 10vw;
+    width: 80vw;
+    padding-bottom: 10vw;
+
+}
+
+#Skills ul{
+    font-size: 3vh;
+    color: var(--B_Letter);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+
+}
+#Education{
+    border-radius: 20%;
+    text-align: center;
+    padding:10px;
+    color: white;
+    font-size: 3vh;
+    background-color: var(--S_Letter);
+    width: 60%;
+    margin-left: 20%;
 }
 #contact {
     margin-left: 10%;
@@ -356,17 +478,18 @@ img{
 }
 
 .footer {
-    height: 10px;
+    height: 40px;
     margin-left: 20px;
     background-color: #1616168c;
     color: #fff;
     text-align: center;
-    padding: 10px;
+ 
 
     position: fixed;
     bottom: 0;
     width: 110%;
 }
 .footer p{
-    margin-bottom: 40px;
+    margin-right: 8vw;
+    top:0;
 }

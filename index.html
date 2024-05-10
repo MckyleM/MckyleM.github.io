@@ -14,6 +14,8 @@
             
             <li><a id="ab" href="#contact">_contact</a></li>
             <li><a href="#resume">_resume</a></li>
+            <li><a href="#Education">_education</a></li>
+            <li><a href="#Skills">_skills</a></li>
             <li><a href="#projects">_projects</a></li>
             <li><a href="#about">_about</a></li>
         </ul></div>
@@ -21,35 +23,41 @@
     
     <div class="Title_block" id="intro-block">
         
-        <p>**Hello, welcome to my website, I am**</p>
+        <p>**Welcome to my website, I am**</p>
         <h1>{"<span id="Name_Tag" class="highlight">Mckyle Meyer</span>"}</h1>
         <p id="Arrow">&#8595;</p>
-        <div id="Intro-pic-block">
-        <img id="Intro-Picture" src="OIG1.jpeg" alt="">
-    </div>
+        
+            <img id="Selfie" src="315639386_2807774822687024_7891349190972975598_n.jpg" alt="">
+    
     </div>
     
     
     <div class="content">
         <section id="about">
+            <hr>
             <h2 class="Title_block">{"<span class="title_style">About_me</span>"}</h2>
             <div id="Abt_box">
                 <hr>
                 <p id="Abt_left" class="Abt_text">...A dedicated developer, software enthusiast and always ready to learn;</p>         
-                <p id="Abt_right" class="Abt_text">…I have been coding since 2018, learning new things ever since. I am a very curious person and strive to make sure that I understand everything I come across. With a deep interest for AI I am ready to make a serious impact for the future of our wold and lives;</p>
+                <p id="Abt_right" class="Abt_text">…I have been coding since 2018, learning new things ever since. I am a very curious person and strive to make sure that I understand everything I come across. Any company would benefit from the skills and mentality that I bring to the table. I have drive that can bring great success to any company. With a deep interest for AI I am ready to make a serious impact for the future of our wold and lives;</p>
             </div>  
+            
             <br> 
+            <div id="Intro-pic-block" class="Title_block ">
+                <img id="Intro-Picture" src="OIG1.jpeg" alt="">
+            </div>
         </section>
         
         <section id="projects" >
-            <h2 class="Title_block">{"<span class="title_style">Projects</span>"}</h2>
+            <hr>
+            <h2 id="Pro_title" class="Title_block">{"<span class="title_style">Projects</span>"}</h2>
             <hr>  
             <div class="project-container"data-mouse-down-at="0" draggable="false"onselectstart='return false;' data-prev-percentage="0">      
             <div class="project-bubble" id="Pro1"draggable="false">
                 <h3 >Youtube downloader</h3>
                 <p>A python script used for downloading youtube videos to your computer</p>
-                <img src="/Youtube_Downloader\YD_snip.png" alt="YT_downloader">
-                <img src="/Youtube_Downloader\YD_result.png" alt="YT_result">
+                <img src="Youtube_Downloader\YD_snip.png" alt="YT_downloader">
+                <img src="Youtube_Downloader\YD_result.png" alt="YT_result">
             </div>
             <div class="project-bubble" id="Pro2">
                 <h3>Calculator</h3>
@@ -61,7 +69,6 @@
                     <table id="key-pad">
                     <tr>
                         <td><input type="button" value="C" onclick="clr()" class="Symbol"></td>
-                        <td><input type="button" value="%" onclick="perc()" class="Symbol"></td>
                         <td><input type="button" value="⌫" onclick="bck()" class="Symbol"></td>
                         <td><input type="button" value="÷" onclick="div()" class="Symbol"></td>
                     </tr>
@@ -101,30 +108,64 @@
             <div class="project-bubble" id="Pro4">
                 <h3>Image editor</h3>
                 <p>A python script to edit images</p>
-                <img id="Org_img" src="Aug-8@21.4.8.png" alt="Original" width="500" height="600">
-                <img id="Org_img" src="Aug-8@21.4.8_edited.jpg" alt="Edited" width="500" height="600">
+                <img id="Org_img" class="edit" src="Image_Editor\imgs\Aug-8@21.4.8.png" alt="Original" width="500" height="600">
+                <img id="Edt_img" src="Image_Editor\editedImgs\Aug-8@21.4.8_edited.jpg" alt="Edited" width="500" height="600">
             </div>
             <div class="project-bubble" id="Pro5">
                 <h3>Smallpenny</h3>
                 <p>A small blockchain that I built</p>
-                <img src="/Blockchain/SmallPen_img.png" alt="Smallpenny">
-                <img id="SP_snip" src="/Blockchain/SmallPen_Snip.png" alt="Smallpenny">
+                <img src="Blockchain/SmallPen_img.png" alt="Smallpenny">
+                <img id="SP_snip" src="Blockchain/SmallPen_Snip.png" alt="Smallpenny">
             </div>
         </section>
     </div>
+    
+    <section>
+        <hr>
+        <h2 id="T_Skills" class="Title_block">{"<span class="title_style">Skills</span>"}</h2>
+        <hr>
+        <div id="Skills">
+           <ul>
+            <li>javascript</li>
+            <li>python</li>
+            <li>c#</li>
+            <li>html</li>
+            <li>css</li>
+           </ul>
+        </div>
+    </section>
+    <section class="Education" id="E_Block">
+       <hr>
+        <h2 id="T_Education" class="Title_block">{"<span class="title_style">Education</span>"}</h2> 
+        <hr>
+        <div id="Education">
+            <h2>Belgium Campus</h2>
+                <h3 class="E_Name">Bachelor's degree, Computer Science</h3>
+                <p>2022 - 2025</p>
+            
+                <hr>
+                <h2>HTS Middelburg</h2>
+                <h3 class="E_Name">Matrix</h3>
+                <p>Jun 2017 - Jun 2021</p>
+                
+        </div>
+    </section>
         <section id="resume">
             <hr>
-            <h2 class="Title_block">{"<span class="title_style">Resume</span>"}</h2>
+            <h2 class="Title_block">{"<span class="title_style">Resume</span>"}</h2> 
+             <hr>
             <div class="res_container">
                 
-                    <embed src="Resume-Mckyle-Meyer.pdf" type="application/pdf" width="100%" height="600px" />
+                    <embed src="Mckyle-Meyer-resume.pdf" type="application/pdf" width="100%" height="600px" />
         
             </div>
         
         </section>
         
-        <section>
+        <section id="Cont_block">
+            <hr>
             <h2 class="Title_block">{"<span class="title_style">Contact_me</span>"}</h2>
+            <hr>
                 <div id="contact">
                     <p>Phone: 0636960174</p>
                     <p>Email: mckylemeyer12@gmial.com</p>
