@@ -1,4 +1,4 @@
-@font-face {
+Picture@font-face {
     font-family: 'xerodaregular';
     src: url('Font/xerodaregular-p7dwr-webfont.woff2') format('woff2'),
          url('Font/xerodaregular-p7dwr-webfont.woff') format('woff');
@@ -101,6 +101,7 @@ li a{
     color: var(--S_Letter);
 }
 #Intro-pic-block img {
+    aspect-ratio: 2/3;
     width: 110%;  
     margin-left: -2vw;
     height: 30vw; 
@@ -204,7 +205,6 @@ li a{
        #contact {
         margin-left: -12vw;
         padding-right: 20vw;
-        
         width: 80%;
         height: 20vh;
         padding: 20px;
@@ -215,6 +215,7 @@ li a{
         padding-bottom: 50px;
         
     }
+
     
     #contact p {
         text-align: center;
@@ -486,8 +487,31 @@ img{
     width: 110%;
 }
 .footer p{
-    margin-right: 8vw;
+    margin-right: 10vw;
     top:0;
+}
+#res_down{
+    background-color: var(--B_Letter);
+    border-radius: 50%;
+    font-size: 2vh;
+    padding-top: 3vh;
+    height: 10vh;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+#res_down a{
+    text-decoration: none;
+    color: var(--S_Letter);
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+.res_btn_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1000px;
+     /* Adjust this as needed */
+
 }
 @media screen and (max-width:1500px) {
     .floating-nav-inner {
@@ -503,6 +527,18 @@ img{
         gap: 0.5rem;
         text-align: center;
     }
+    embed{
+       display: none;
+    }
+    .res_container{
+        height: 6vh;
+    }
+    .Cont_block h2{
+        margin-left: 100vw;
+        background-color: red;
+    }
+    
+  
 }
 @media screen and (min-width:1500px) {
     #menu{
