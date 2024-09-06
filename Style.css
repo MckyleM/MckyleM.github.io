@@ -1,4 +1,4 @@
-Picture@font-face {
+@font-face {
     font-family: 'xerodaregular';
     src: url('Font/xerodaregular-p7dwr-webfont.woff2') format('woff2'),
          url('Font/xerodaregular-p7dwr-webfont.woff') format('woff');
@@ -617,4 +617,10 @@ img{
 }
 .menu-icon span:first-child{
     transform: none;
+}
+.highlight-ln{
+    
+    background-color: red;
+    color: var(--B_Letter);
+    font-weight: bold;
 }
