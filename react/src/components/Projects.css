@@ -1,0 +1,78 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: border-color .25s, transform .25s;
+}
+.project:hover { border-color: #313844; transform: translateY(-4px); }
+
+/* First project spans full width as a feature row */
+.project:first-child {
+  grid-column: 1 / -1;
+  flex-direction: row;
+}
+.project:first-child .project-media { flex: 1.1; min-height: 100%; }
+.project:first-child .project-body { flex: 1; }
+
+.project-media {
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--line);
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+}
+.project:first-child .project-media { border-bottom: none; border-right: 1px solid var(--line); }
+
+.media-single { width: 100%; max-height: 260px; object-fit: contain; border-radius: 8px; }
+.media-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+}
+.media-pair img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.project-body { padding: 26px; display: flex; flex-direction: column; gap: 10px; }
+.project-num {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--green);
+  letter-spacing: 0.1em;
+}
+.project-body h3 {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.project-body p { margin: 0; color: var(--muted); font-size: 0.98rem; }
+.project-stack { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 2px; }
+.project-link {
+  font-family: var(--mono);
+  font-size: 0.84rem;
+  color: var(--blue);
+  margin-top: auto;
+  padding-top: 8px;
+  transition: color .2s, gap .2s;
+}
+.project-link:hover { color: var(--green); }
+
+@media (max-width: 860px) {
+  .projects { grid-template-columns: 1fr; }
+  .project:first-child { flex-direction: column; }
+  .project:first-child .project-media { border-right: none; border-bottom: 1px solid var(--line); }
+}
