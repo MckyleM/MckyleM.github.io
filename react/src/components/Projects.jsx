@@ -1,14 +1,10 @@
 import { motion } from 'framer-motion'
 import SectionHead from './SectionHead.jsx'
-import Calculator from './Calculator.jsx'
-import ImageCompare from './ImageCompare.jsx'
 import BlockchainDiagram from './BlockchainDiagram.jsx'
 import { projects } from '../data/content.js'
 import './Projects.css'
 
 function ProjectMedia({ p }) {
-  if (p.interactive === 'calculator') return <Calculator />
-  if (p.compare) return <ImageCompare before={p.compare.before} after={p.compare.after} />
   if (p.diagram === 'blockchain') return <BlockchainDiagram />
   if (p.images?.length === 2) {
     return (

@@ -127,24 +127,6 @@ export const profile = {
       stack: ['React', 'Cloudflare Workers'],
       link: 'https://github.com/MckyleM/MckyleM.github.io',
     },
-    {
-      id: 'image-editor',
-      name: 'Image Editor',
-      blurb: 'A Python script that processes and edits images. Drag the handle to compare.',
-      stack: ['Python'],
-      compare: {
-        before: 'assets/projects/img-original.jpg',
-        after: 'assets/projects/img-edited.jpg',
-      },
-      link: 'https://github.com/MckyleM',
-    },
-    {
-      id: 'calculator',
-      name: 'Calculator',
-      blurb: 'A working calculator keypad written in JavaScript. Try it — it runs right here.',
-      stack: ['JavaScript'],
-      interactive: 'calculator',
-    },
   ],
 
   // Projects that appear on the resume PDF (subset, in order).
