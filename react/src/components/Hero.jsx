@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { profile } from '../data/content.js'
+import { profile, heroCard } from '../data/content.js'
 import './Hero.css'
 
 const container = {
@@ -70,13 +70,20 @@ export default function Hero() {
           <div className="card-body">
             <img className="avatar" src="assets/selfie.jpg" alt="Mckyle Meyer" />
             <pre className="code">
-{`{
-  `}<span className="k">"name"</span>{`: `}<span className="s">"Mckyle Meyer"</span>{`,
-  `}<span className="k">"role"</span>{`: `}<span className="s">"Software Developer"</span>{`,
-  `}<span className="k">"since"</span>{`: `}<span className="n">2018</span>{`,
-  `}<span className="k">"focus"</span>{`: `}<span className="s">"AI · web · systems"</span>{`,
-  `}<span className="k">"open_to_work"</span>{`: `}<span className="b">false</span>{`
-}`}
+              {'{\n'}
+              {heroCard.map((f, i) => (
+                <span key={f.k}>
+                  {'  '}
+                  <span className="k">"{f.k}"</span>
+                  {': '}
+                  {f.t === 's' && <span className="s">"{f.v}"</span>}
+                  {f.t === 'n' && <span className="n">{f.v}</span>}
+                  {f.t === 'b' && <span className="b">{String(f.v)}</span>}
+                  {i < heroCard.length - 1 ? ',' : ''}
+                  {'\n'}
+                </span>
+              ))}
+              {'}'}
             </pre>
           </div>
         </motion.div>

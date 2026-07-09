@@ -2,12 +2,14 @@ import { motion } from 'framer-motion'
 import SectionHead from './SectionHead.jsx'
 import Calculator from './Calculator.jsx'
 import ImageCompare from './ImageCompare.jsx'
+import BlockchainDiagram from './BlockchainDiagram.jsx'
 import { projects } from '../data/content.js'
 import './Projects.css'
 
 function ProjectMedia({ p }) {
   if (p.interactive === 'calculator') return <Calculator />
   if (p.compare) return <ImageCompare before={p.compare.before} after={p.compare.after} />
+  if (p.diagram === 'blockchain') return <BlockchainDiagram />
   if (p.images?.length === 2) {
     return (
       <div className="media-pair">
@@ -16,7 +18,20 @@ function ProjectMedia({ p }) {
       </div>
     )
   }
-  return <img className="media-single" src={p.images[0]} alt={p.name} />
+  if (p.images?.length) return <img className="media-single" src={p.images[0]} alt={p.name} />
+  // No media: render a terminal-style card so link-less projects still get a visual.
+  return (
+    <div className="media-card">
+      <div className="media-card-bar">
+        <span className="dot r" /><span className="dot y" /><span className="dot g" />
+      </div>
+      <pre className="media-card-code">
+        <span className="green">$</span> {p.id}{'\n'}
+        <span className="faint">stack:</span> {p.stack.join(' · ')}{'\n'}
+        {p.note && <><span className="faint">status:</span> {p.note}</>}
+      </pre>
+    </div>
+  )
 }
 
 export default function Projects() {
@@ -51,6 +66,7 @@ export default function Projects() {
                     view on github <span aria-hidden>↗</span>
                   </a>
                 )}
+                {p.note && <span className="project-note">{p.note}</span>}
               </div>
             </motion.article>
           ))}

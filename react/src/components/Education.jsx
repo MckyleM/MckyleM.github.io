@@ -7,7 +7,7 @@ export default function Education() {
   return (
     <section id="education" className="section">
       <div className="container">
-        <SectionHead idx="04" title="education" />
+        <SectionHead idx="05" title="education" />
         <div className="timeline">
           {education.map((e, i) => (
             <Reveal key={e.school} delay={i * 0.1}>

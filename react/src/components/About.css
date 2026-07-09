@@ -17,24 +17,12 @@
   padding-left: 18px;
 }
 
-.about-photo {
-  overflow: hidden;
-  padding: 8px;
-  margin-bottom: 22px;
-}
-.about-photo img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 9px;
-}
-
-.facts { list-style: none; margin: 0; padding: 0; }
+.facts { list-style: none; margin: 0; padding: 10px 24px; }
 .facts li {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  padding: 12px 0;
+  padding: 14px 0;
   border-bottom: 1px solid var(--line-soft);
 }
 .facts li:last-child { border-bottom: none; }

@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section id="contact" className="section">
       <div className="container">
-        <SectionHead idx="06" title="contact" />
+        <SectionHead idx="07" title="contact" />
         <div className="contact-grid">
           <motion.div
             className="contact-pitch"
@@ -26,9 +26,7 @@ export default function Contact() {
               <span className="green">$</span> say hello
             </p>
             <h3>Let’s build something.</h3>
-            <p className="contact-sub">
-              Open to opportunities and collaboration. The fastest way to reach me is email.
-            </p>
+            <p className="contact-sub">{profile.openToWorkLine}</p>
             <a className="btn btn-primary" href={`mailto:${profile.email}`}>
               start a conversation ↗
             </a>

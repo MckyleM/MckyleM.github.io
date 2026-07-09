@@ -7,19 +7,9 @@ export default function Resume() {
   return (
     <section id="resume" className="section">
       <div className="container">
-        <SectionHead idx="05" title="resume" />
+        <SectionHead idx="06" title="resume" />
         <Reveal>
           <div className="resume panel">
-            <div className="resume-viewer">
-              <object data={profile.resume} type="application/pdf" aria-label="Resume PDF">
-                <div className="resume-fallback">
-                  <p>Your browser can’t display the embedded PDF.</p>
-                  <a className="btn btn-primary" href={profile.resume} target="_blank" rel="noreferrer">
-                    open resume ↗
-                  </a>
-                </div>
-              </object>
-            </div>
             <div className="resume-side">
               <p className="eyebrow">// curriculum vitae</p>
               <h3>Want the full story?</h3>
