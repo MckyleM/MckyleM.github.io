@@ -112,6 +112,14 @@ export const profile = {
       link: 'https://github.com/MckyleM/AloeFeroxAlgorithm',
     },
     {
+      id: 'fraud-detection',
+      name: 'Card-fraud detection',
+      blurb:
+        'A classical-ML pipeline on card-transaction data — logistic regression, decision tree and random forest trained and compared in a step-by-step notebook, with the final model served through a Dash web app deployed to Render.',
+      stack: ['Python', 'scikit-learn', 'Dash'],
+      link: 'https://github.com/MckyleM/MLG_Project2_Fraud_Detection',
+    },
+    {
       id: 'portfolio-site',
       name: 'This website',
       blurb:
@@ -122,5 +130,5 @@ export const profile = {
   ],
 
   // Projects that appear on the resume PDF (subset, in order).
-  resumeProjects: ['aloe-ferox', 'portfolio-site'],
+  resumeProjects: ['aloe-ferox', 'fraud-detection', 'portfolio-site'],
 }
