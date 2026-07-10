@@ -4,8 +4,8 @@
 
 export const profile = {
   name: 'Mckyle Meyer',
-  role: 'Software Developer',
-  tagline: 'I build a production .NET platform by day — and the AI tooling that speeds it up around everything else.',
+  role: 'Full-Stack Software Developer',
+  tagline: 'Full-stack developer — I ship production platforms by day and build the AI tooling that speeds them up around everything else.',
   location: 'Pretoria, Gauteng, South Africa',
   email: 'mckylemeyer12@gmail.com',
   github: 'https://github.com/MckyleM',
@@ -21,7 +21,7 @@ export const profile = {
   // Hero developer.json card — rendered from data, not hard-coded.
   heroCard: [
     { k: 'name', v: 'Mckyle Meyer', t: 's' },
-    { k: 'role', v: 'Software Developer', t: 's' },
+    { k: 'role', v: 'Full-Stack Developer', t: 's' },
     { k: 'since', v: 2018, t: 'n' },
     { k: 'focus', v: 'AI · web · systems', t: 's' },
     { k: 'open_to_work', v: true, t: 'b' },
@@ -29,11 +29,12 @@ export const profile = {
 
   // Resume summary. Site About section uses `about` below.
   summary:
-    'C#/.NET developer on a production financial-services practice-management platform — ' +
-    'Blazor front ends and ASP.NET Core services across a multi-repo architecture. Strongest at ' +
-    'authentication flows, cross-service API contracts, and refactoring at scale. Builds ' +
-    'AI-augmented engineering workflows: agent-readable knowledge vaults, code knowledge graphs ' +
-    'for pre-refactor impact analysis, and locally served LLMs.',
+    'Full-stack developer on a production C#/.NET platform — ASP.NET Core services with Blazor ' +
+    'and React front ends — who ships products end-to-end: most recently a Microsoft Outlook ' +
+    'add-in built as a React/TypeScript task pane on a .NET backend and deployed ' +
+    'multi-container on Azure. Uses AI aggressively as an engineering multiplier: ' +
+    'agent-readable knowledge vaults, code knowledge graphs for pre-refactor impact analysis, ' +
+    'and locally served LLMs.',
 
   about: [
     'By day I build a financial-services practice-management platform in C#/.NET — Blazor front ends, ASP.NET Core services, and the authentication flows and API contracts that hold a multi-repo architecture together.',
@@ -55,13 +56,13 @@ export const profile = {
       start: 'Oct 2024',
       end: 'Present',
       intro:
-        'Develops a financial-services practice-management platform (.NET) spanning a legacy ASP.NET Core MVC application and a modern Blazor/microservices line.',
+        'Develops a financial-services practice-management platform (.NET) spanning a legacy ASP.NET Core MVC application and a modern microservices line.',
       bullets: [
-        'Designed and implemented OIDC authentication for a Microsoft Outlook add-in (Office.js) using a Backend-for-Frontend with a one-time-code server-side relay — working around Outlook-on-the-Web’s broken dialog-messaging channel — and configured ASP.NET Data Protection key persistence so sessions survive restarts and scale-out.',
-        'Leading the extraction of a settings module out of a large Blazor CRM application into a standalone app: dependency injection, Fluxor state and namespaces re-architected across 30+ components, services and models while both solutions keep building green.',
         'Built a Microsoft Outlook add-in end-to-end: a React/TypeScript task pane backed by a .NET BFF that proxies to internal services via OpenAPI-generated typed clients (NSwag) and renders emails to PDF through a headless-Chromium sidecar; shipped to production on Azure as a multi-container deployment.',
-        'Set up and scaled the platform’s automated test project (Playwright/TypeScript against a Blazor UI, CI in Azure Pipelines): wrote the first ~130 of its ~300 tests, eliminated flaky failures from UI virtualization and fixed-timeout waits, and ran 250-iteration stability loops to surface intermittent failures before CI.',
+        'Designed and implemented OIDC authentication for a Microsoft Outlook add-in (Office.js) using a Backend-for-Frontend with a one-time-code server-side relay — working around Outlook-on-the-Web’s broken dialog-messaging channel — and configured ASP.NET Data Protection key persistence so sessions survive restarts and scale-out.',
+        'Set up and scaled the platform’s automated test project (Playwright/TypeScript, CI in Azure Pipelines) so UI changes ship without manual regression passes: wrote the first ~130 of its ~300 tests and eliminated flaky failures from UI virtualization and fixed-timeout waits.',
         'Trained 3 interns (Sep 2025 – Feb 2026), taking them from zero Playwright/TypeScript experience to independently maintaining the ~300-test suite.',
+        'Leading the extraction of a settings module out of a large CRM application into a standalone app: dependency injection, state management and namespaces re-architected across 30+ components, services and models while both solutions keep building green.',
       ],
     },
   ],
@@ -96,28 +97,19 @@ export const profile = {
   // Grouped, no self-ratings.
   skills: [
     { group: 'Languages', items: ['C#', 'TypeScript / JavaScript', 'Python', 'SQL'] },
-    { group: 'Frameworks', items: ['ASP.NET Core', 'Blazor', 'React'] },
-    { group: 'Cloud & infrastructure', items: ['Azure (Blob Storage)', 'Docker', 'Git'] },
+    { group: 'Frameworks', items: ['ASP.NET Core', 'React', 'Blazor'] },
+    { group: 'Cloud & infrastructure', items: ['Cloudflare Workers', 'Azure (multi-container deployments, Blob Storage)', 'Docker', 'Git'] },
     { group: 'APIs & testing', items: ['OpenAPI / REST (NSwag typed clients)', 'Playwright'] },
   ],
 
   projects: [
     {
-      id: 'smallpenny',
-      name: 'Smallpenny',
+      id: 'aloe-ferox',
+      name: 'Aloe Ferox Algorithm',
       blurb:
-        'A working blockchain built from scratch in Python — blocks, hashing, proof-of-work and chain validation, with no framework doing the heavy lifting.',
-      stack: ['Python'],
-      diagram: 'blockchain',
-      link: 'https://github.com/MckyleM',
-    },
-    {
-      id: 'transformer-1bit',
-      name: 'Transformer from scratch + 1-bit QAT',
-      blurb:
-        'A Llama-style decoder in a single PyTorch file — RMSNorm, RoPE, SwiGLU, causal self-attention — extended with 1-bit quantization-aware training: 1.125 bits per weight via group-wise scales and a straight-through estimator, verified end-to-end (loss 4.2 → 2.32, exact-size bit-packed export).',
-      stack: ['Python', 'PyTorch'],
-      note: 'private — write-up coming',
+        'A computer-vision classifier that recognises Aloe ferox plants from photographs — PyTorch models trained in Jupyter, a data script that builds its own train/test image sets, and a Dash web app for running predictions.',
+      stack: ['Python', 'PyTorch', 'Dash'],
+      link: 'https://github.com/MckyleM/AloeFeroxAlgorithm',
     },
     {
       id: 'portfolio-site',
@@ -130,5 +122,5 @@ export const profile = {
   ],
 
   // Projects that appear on the resume PDF (subset, in order).
-  resumeProjects: ['smallpenny', 'transformer-1bit', 'portfolio-site'],
+  resumeProjects: ['aloe-ferox', 'portfolio-site'],
 }
